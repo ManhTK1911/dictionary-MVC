@@ -25,8 +25,11 @@ public class DictionaryMVC {
         for(String key : dictionary.keySet()){
             if(key.equalsIgnoreCase(word.trim())){
                 model.addAttribute("result",dictionary.get(key));
+                model.addAttribute("word",word);
+                model.addAttribute("nothing", "");
                 break;
             }
+             model.addAttribute("nothing", "Not found!");
         }
 
         return "index";

@@ -15,7 +15,8 @@
     <fieldset>
       <legend>Dictionary</legend>
       <p><input type="text" name="word" placeholder="Enter your word..." value="${word}"><input type="submit" value="Search"></p>
-      <p>Result: <input type="text" value="${result}" disabled</p>
+      <p>Result: <input type="text" value="${result}" disabled ></p>
+      <p>${nothing}</p>
     </fieldset>
   </form>
   </body>
